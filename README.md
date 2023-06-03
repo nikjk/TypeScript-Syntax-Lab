@@ -2,28 +2,28 @@ Original C#:
 
 public class Dog
 {
-	public string Name { get; set; }
-	public string Breed { get; set; }
+    public string Name { get; set; }
+    public string Breed { get; set; }
 
-	public Dog(string name, string breed)
-	{
-    	Name = name;
-    	Breed = breed;
-	}
+    public Dog(string name, string breed)
+    {
+        Name = name;
+        Breed = breed;
+    }
 
-	public string Bark()
-	{
-    	return "Woof!";
-	}
+    public string Bark()
+    {
+        return "Woof!";
+    }
 }
 
 string[] dogBreeds = new string[] { "Labrador", "Golden Retriever", "Bulldog" };
 
 public string GetRandomBreed(string[] breeds)
 {
-	Random random = new Random();
-	int index = random.Next(breeds.Length);
-	return breeds[index];
+    Random random = new Random();
+    int index = random.Next(breeds.Length);
+    return breeds[index];
 }
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -31,21 +31,21 @@ public string GetRandomBreed(string[] breeds)
 JavaScript Version:
 
 class Dog {
-  constructor(name, breed) {
-    this.name = name;
-    this.breed = breed;
-  }
+    constructor(name, breed) {
+        this.name = name;
+        this.breed = breed;
+    }
 
-  bark() {
-    return "Woof!";
-  }
+    bark() {
+        return "Woof!";
+    }
 }
 
 const dogBreeds = ["Labrador", "Golden Retriever", "Bulldog"];
 
 function getRandomBreed(breeds) {
-  const random = Math.floor(Math.random() * breeds.length);
-  return breeds[random];
+    const random = Math.floor(Math.random() * breeds.length);
+    return breeds[random];
 }
 
 // Test the code
